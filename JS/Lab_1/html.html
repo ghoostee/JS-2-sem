@@ -1,0 +1,334 @@
+<html>
+    <head>
+        <title>Первая лаба емае</title>
+
+
+        <style>
+            body{
+                background-color: #FF69B4;
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-around;
+                background: linear-gradient(to right,red,orange,yellow,green,aquamarine,blue,violet)
+            }
+            .input1{
+                color: red;
+                background-color: green;
+                width: 300px;
+                height: 100px;
+                font-size: 25px;
+                font-family: cursive;
+                
+            }
+            .input1:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                background-color: greenyellow;
+                font-size: 27px;
+                color: yellow;
+                
+            }
+            .buttons2{
+                display: flex;
+                justify-content: space-around;
+                background-color: rgba(45, 45, 243, 0.5);
+            }
+            .input2{
+                color:white;
+                background-color: black;
+                width: 300px;
+                height: 100px;
+                font-size: 25px;
+                font-family: cursive;
+            }
+            .input2:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                background-color: greenyellow;
+                font-size: 27px;
+                color: yellow;
+                
+            }
+            .buttons3{
+                display: flex;
+                justify-content: space-around;
+                background-color: rgba(0, 0, 0, 1);
+            }
+            .input3{
+                color:black;
+                background-color: yellow;
+                width: 300px;
+                height: 100px;
+                font-size: 10px;
+                font-family: cursive;
+            }
+            .input3:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                background-color: black;
+                font-size: 10px;
+                color: yellow;
+            }
+            .buttons4{
+                display: flex;
+                justify-content: space-around;
+                background-color: gray;
+            }
+            .input4{
+                color:white;
+                background-color:red;
+                width: 300px;
+                height: 100px;
+                font-size: 17px;
+                font-family: cursive;
+            }
+            .input4:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                background-color: black;
+                font-size: 10px;
+                color: yellow
+            }
+            .buttons5{
+                display: flex;
+                justify-content: space-around;
+                background-color: pink;
+            }
+            .input5{
+                color:black;
+                background-color:violet;
+                width: 300px;
+                height: 100px;
+                font-size: 17px;
+                font-family: cursive;
+            }
+            .input5:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                font-size: 17px;
+            }
+            .buttons6{
+                display: flex;
+                justify-content: space-around;
+                background-color: orange;
+            }
+            .input6{
+                color:black;
+                background-color: blue;
+                width: 300px;
+                height: 100px;
+                font-size: 17px;
+                font-family: cursive;
+            }
+            .input6:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                font-size: 17px;
+            }
+            .buttons7{
+                display: flex;
+                justify-content: space-around;
+                background-color: pink;
+            }
+            .input7{
+                color:black;
+                background-color: rgb(71, 158, 49);
+                width: 300px;
+                height: 100px;
+                font-size: 17px;
+                font-family: cursive;
+            }
+            .input7:active{   
+                margin-top: 5px;
+                width: 290px;
+                height: 90px;
+                font-size: 17px;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function fun1() {
+                alert('Вас привествует военная часть Волчьи Норы');
+            }
+
+            function fun3() {
+                x = confirm('Вы хотите служить у нас?');
+                if(x==true)
+                {
+                    alert('Добро пожаловать на службу')
+                }
+                else
+                {
+                    alert('Не служил - не мужык')
+                }
+            }
+
+            function fun2() {
+                x=prompt('Как тебя зовут, салага: ', 'Имя');
+                alert('Здравствуйте, '+ x);
+            }
+
+            function fun4(){
+                let x=10,y=5;
+                alert(x+y);
+            }
+            function fun5(){
+                let x="10",y="5";
+                alert(x+y);
+            }
+            function fun6(){
+                let x=22,y="5";
+                alert(x+y);
+            }
+            function fun7(){
+                let x="22",y=5;
+                alert(x+y);
+            }
+            function fun8(){
+                alert('Тайна раскрыта: результатом сложения строки и числа будет строка О_о')
+            }
+            function fun9(){
+                let x = prompt('Введите X');
+                let y = prompt('Введите Y');
+                alert((35*y-25*x)/5+232); 
+            }
+            function fun10(){
+                let x = prompt('Введите X');
+                let y = prompt('Введите Y');
+                alert( (8*y/x + 5*x/y - 43)*6 ); 
+            }
+            function fun11(){
+                let x = prompt('Введите число');
+                if(x%5==0  && x!=15 && x<20 || x>40)
+                {
+                    alert('Правильное число');
+                }
+                else
+                {
+                    alert('Неправиильное число');
+                }
+            }
+            function fun12(){
+                let x = prompt('Назовите один из спутников Марса');
+                if(x=='Деймос' || x=='Фобос')
+                {
+                    alert('Ваши познания в Астрономии неплохие');
+                }
+                else
+                {
+                    alert('Придется загуглить :D');
+                }
+            }
+            function fun13(){
+                let a = +prompt('Введите a');
+                let b = +prompt('Введите b');
+                if(a > b)
+                {
+                    alert('a > b');
+                }
+                else if(a==b)
+                {
+                    alert('a=b')
+                }
+                else
+                {
+                    alert('a < b');
+                }
+            }
+            function fun14(){
+                let x = +prompt('Сколько вам лет?');
+                if(x>=18)
+                {
+                    window.open("animation.html");
+                }
+                else
+                {
+                    alert('Просмотр контента запрещен');
+                }
+            }
+            function getDay(){
+                var Data = new Date();
+                var day = Data.getDay();
+                switch(day)
+                {
+                case 0: alert('Воскресенье');break;  
+                case 1: alert('Понедельник');break;  
+                case 2: alert('Вторник');break;   
+                case 3: alert('Среда');break;   
+                case 4: alert('Четверг');break;   
+                case 5: alert('Пятница');break;   
+                case 6: alert('Суббота');break;   
+                }
+            }
+            function fun15(){
+                try
+                {
+                    documant.write("Вторая строка");
+                }
+                catch (e)
+                {
+                    alert("Ошибка :" + e.message);
+                }
+            }
+            function fun16(){
+                try
+                {
+                    alert("Ошибок нет. Лаба окончена");
+                }
+                catch (e)
+                {
+                    alert("Ошибка :" + e.message);
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <hr>
+        <div class="buttons">
+            <input class="input1" type='button' value='Окно оповещения' onclick='fun1()' />
+            <input class="input1" type='button' value='Окно запроса' onclick='fun2()' />
+            <input class="input1" type='button' value='Окно подтверждения' onclick='fun3()' />
+        </div>
+        <hr>
+        <div class="buttons2">
+            <input class="input2" type='button' value='10+5' onclick='fun4()' />    
+            <input class="input2" type='button' value='10+5??' onclick='fun5()' />  
+            <input class="input2" type='button' value='22+5??' onclick='fun6()' />  
+            <input class="input2" type='button' value='22+5??' onclick='fun7()' /> 
+            <input class="input2" type='button' value='Тайна человечества' onclick='fun8()' />   
+        </div>
+        <hr>
+        <div class="buttons3">
+            <input class="input3" type='button' value="Позанимаемся математикой? (35*y-25*x)/5+232" onclick='fun9()'/>
+            <input class="input3" type='button' value="Позанимаемся математикой? (8*y/x+5*x/y – 43)*6)" onclick='fun10()'/>
+        </div>
+        <hr>
+        <div class="buttons4">
+            <input class="input4" type='button' value="Сейчас будем проверять числа :)" onclick='fun11()'/>
+            <input class="input4" type='button' value="Проверим знания астрономии?" onclick='fun12()'/>
+        </div>
+        <hr>
+        <div class="buttons5">
+            <input class="input5" type='button' value="Сейчас будем проверять числа 2x :)" onclick='fun13()'/>
+            <input class="input5" type='button' value="Кажется это что-то интересное" onclick='fun14()'/>
+        </div>
+        <hr>
+        <div class="buttons6">
+            <input class="input6" type='button' value="День недели" onclick='getDay()'/>
+        </div>
+        <hr>
+        <div class="buttons7">
+            <input class="input7" type='button' value="проверяем ошибОЧКИ" onclick='fun15()'/>
+            <input class="input7" type='button' value="А тут ошибОЧКИ нет!" onclick='fun16()'/>
+        </div>
+        <hr>
+    </body>
+</html>

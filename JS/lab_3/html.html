@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>3 Лаба блинб</title>
+        <script>
+            function func1()
+            {
+                /* 
+                1. 6*pi^2+3*e^8
+                2. 2*cos4+cos12+8*e^3
+                3. 3*sin9+ln5+3^1/2
+                4. 2*tan5+6*pi+12^1/2
+                */
+                var a =6*Math.pow(Math.PI,2) + 3*Math.pow(Math.E,2);
+                document.write(a+'</br>');   
+                var b = 2*Math.cos(4)+Math.cos(12)+8*Math.pow(Math.E,3);
+                document.write(b+'</br>');    
+                var c = 3*Math.sin(9)+Math.log(5)+Math.sqrt(3);
+                document.write(c+'</br>')
+                var d = 2*Math.tan(5)+6*Math.PI+Math.sqrt(12);
+                document.write(d+'</br>');
+
+                massiv = new Array();
+                massiv[0]=a;
+                massiv[1]=b;
+                massiv[2]=c;
+                massiv[3]=d;
+
+                var min = massiv[0];
+                var iholder = 0;
+                for(var i=1;i<=massiv.length-1;i++)
+                {
+                    if(massiv[i]<min)
+                    {
+                        min=massiv[i];
+                        iholder=i+1;
+                    }
+                }
+                document.write('Минимальное значение:  '+ min + '</br>'+'Номре элемента массива: '+iholder+'</br>');
+
+                var max = massiv[0];
+                iholder = 0;
+                for(var i=1;i<=massiv.length-1;i++)
+                {
+                    if(massiv[i]>max)
+                    {
+                        max=massiv[i];
+                        iholder=i+1;
+                    }
+                }
+                document.write('Максимальное значение:  '+ max + '</br>'+'Номре элемента массива: '+iholder+'</br>');
+            }
+            function func2()
+            {
+                let arr = ["pow","pop","push","shift","round","floor","slice","sort"];
+                let Arr = [];
+                let math = [];
+                let j=0;
+                let k=0;
+
+                for(let i=0;i<(arr.length);i++)
+                {
+                    if(arr[i]=="pow" || arr[i]=="floor" || arr[i]=="round")
+                    {
+                        math[j]=arr[i];
+                        j++;
+                    }
+                    else if( arr[i] == "pop" || arr[i] == "push" || arr[i] == "shift" || arr[i] == "slice" || arr[i] == "sort")
+                    {
+                        Arr[k]=arr[i];
+                        k++;
+                    }
+                }
+
+                math.push("cos");
+                Arr.unshift("unshift");
+
+                document.write("Исходный массив - " + arr + ". Его длина - "+arr.length + "<br>");
+                document.write("Массив math - " + math + ". Его длина - "+math.length + "<br>");
+                document.write("Массив Arr - " + Arr + ". Его длина - "+Arr.length + "<br>");
+
+            }
+            function func3()
+            {
+                mystring = "Леонов Денис Игоревич";
+                document.write(mystring+'</br>');
+                document.write(mystring.length+'</br>');
+                document.write(mystring.toUpperCase()+'</br>');
+                document.write(mystring.toLowerCase()+'</br>');
+                document.write(mystring.toUpperCase().concat(mystring.toLowerCase())+'</br>');
+                document.write(mystring.replace('Леонов Денис Игоревич','ЛДИ'));
+            }
+            function func4()
+            {
+                var x =new Date();
+                document.write('<table border = "1px"');
+                document.write('<tr><td>'+'Год'+'</td>')
+                document.write('<td>'+x.getFullYear()+'</td></tr>')
+                document.write('<tr><td>'+'Месяц'+'</td>')
+                document.write('<td>'+(x.getMonth()+1) +'</td></tr>')
+                document.write('<tr><td>'+'День'+'</td>')
+                document.write('<td>'+(x.getDate())+'</td></tr>')
+                document.write('<tr><td>'+'Час'+'</td>')
+                document.write('<td>'+x.getHours()+'</td></tr>')
+                document.write('<tr><td>'+'Минуты'+'</td>')
+                document.write('<td>'+x.getMinutes()+'</td></tr>')
+                document.write('<tr><td>'+'Секунды'+'</td>')
+                document.write('<td>'+x.getSeconds()+'</td></tr>')
+                
+            }
+        </script>
+        <style >
+            body{
+                background-color:#A289A8;
+            }
+            input{
+                background-color: #D250F2;
+                color:#F2CA68;
+                width: 300px;
+                height: 100px;
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                
+                
+            }
+            div{
+                display: flex;
+                justify-content: space-between;
+            }
+            table{
+                border:2px;
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <input type="button" value="Порешаем блинб" onclick="func1()">
+        <input type='button' value='2 Массива' onclick='func2()'/>
+        <input type='button' value='Имя Мужык фамилия Таджык' onclick='func3()'/> 
+        <input type='button' value='А какой сегодня день?' onclick='func4()'/>
+        </div>
+    </body>
+</html>
